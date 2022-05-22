@@ -26,6 +26,7 @@ export interface nItem {
  }
  export interface dItem{
      id: string;
+     user_id :string
  }
 //AppState object that will store one of each interface.
 //note the type keyword... it's like calling something an object in java

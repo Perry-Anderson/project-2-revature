@@ -15,7 +15,7 @@ public class ProductService {
 	UserDAO uDAO = new UserDAO();
 	
 	public void addProductService(ProductDTO pDTO) {
-		User currentUser = uDAO.getUserbyId(pDTO.user_id);
+		User currentUser = uDAO.getUserbyId(Integer.parseInt(pDTO.user_id));
 		Wishlist currentWishlist = new Wishlist(
 				Integer.parseInt(pDTO.id),
 				pDTO.title,

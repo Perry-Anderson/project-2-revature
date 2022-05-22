@@ -28,7 +28,8 @@ const initialState:AppState = {
         image: ""
     },
     dItem :{
-        id: ""
+        id: "",
+        user_id: ""
     }
     
 
