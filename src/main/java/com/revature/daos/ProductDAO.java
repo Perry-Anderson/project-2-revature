@@ -55,6 +55,7 @@ public List<Wishlist> getUserWishList(int user_id){
 		q.setParameter(0, user_id);
 		//create a List of Movies based on the results of the query
 		List<Wishlist> wishlist = q.getResultList();
+		
 
 		//ends the hibernate session
 		HibernateUtil.closeSession();

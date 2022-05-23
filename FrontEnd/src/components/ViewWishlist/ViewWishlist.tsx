@@ -6,6 +6,8 @@ import axios from 'axios'
 import "./ViewWishlist.css"
 import { dItem } from '../../store/types'
 import { AppState } from '../../store/types'
+import {Navbar, Nav,Container} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 
 export const ViewWishlist: React.FC<any> = (get:any) => {
@@ -62,32 +64,51 @@ export const ViewWishlist: React.FC<any> = (get:any) => {
     navigate("/")
    }
    
-    return (
-       <>
-       <div className = "background">
-       <div className="Navigation bar">
-       <button onClick={logout}>Log Out</button>
-       </div>
-        <div className = "banner-image"></div>
-       <div className="products-container">
+   return (
+    <>
+<Navbar variant="dark">
+   <Container>
+   <Nav className="me-auto">
 
-        {data.map((product)=> (
-            
-            <div key={product.id} className="card">
-            <div><img src={product.image} alt="#"/></div> 
-            <div className="card-description">
-            <h6>{product.title}</h6>
-            <h6>{`Price: ${product.price}`}</h6>
-            <h6>{`Category: ${product.category}`}</h6>
-            <button className = "deleteButton" onClick={() => deleteProduct(product.product_id)}>Remove From Wishlist</button>
-            
-            </div>
-            </div>
-        ))} 
-        </div> 
+   <ul>
+   <li> <Navbar.Brand href="#home">Wish</Navbar.Brand></li>
+   <li><Nav.Link as = {Link} to="/products" >All Products</Nav.Link></li>
+   <li><Nav.Link as = {Link} to="/Electronics" >Electronics</Nav.Link></li>
+   <li><Nav.Link as = {Link} to="/Jewelery" >Jewelry</Nav.Link></li>
+   <li><Nav.Link as = {Link} to="/MensClothing" >Men's Clothing</Nav.Link></li>
+   <li><Nav.Link as = {Link} to="/WomensClothing" >Women's Clothing</Nav.Link></li>
+   <li><Nav.Link as = {Link} to="/viewwishlist" >Go To WishList</Nav.Link></li>
+   <li><Nav.Link as = {Link} to="/">
+       
+       <span onClick={logout}>Log Out </span>
+       </Nav.Link></li>
+   </ul>
+        </Nav>
+        </Container>
+        </Navbar>
+
+        <div className = "background">
+        <div className="products-container">
+              {data.map((product)=> (
+
+         <div key={product.id} className="card">
+         <div><img src={product.image} alt="#"/></div> 
+         <div className="card-description">
+         <h6>{product.title}</h6>
+         <h6>{`Price: ${product.price}`}</h6>
+         <h6>{`Category: ${product.category}`}</h6>
+         <div className="addToWishList">
+        <button className = "addToWishList" onClick={() => deleteProduct(product.product_id)}>Remove From Wishlist</button>
+         
+         </div>
+         </div>
+         </div>
+
+     ))} 
         </div>
-    
-            </>
-    );
+        </div>
+
+         </>
+ );
 };
 

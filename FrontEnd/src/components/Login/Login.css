@@ -12,13 +12,13 @@
 
 .text-container {
     text-align: center;
-    margin-bottom: 200px;
+    margin-bottom: 120px;
     color: white;
     
 }
 
 .input-container {
-    height: 20px;
+    height: 40px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right:auto;
@@ -35,14 +35,15 @@
 .login-button {
    
     background-color: rgba(255, 255, 255, 0.2);
-    width: 25%;
-    margin-left: 10px;
+    width: 20%;
+    margin-left: 9px;
     margin-right:10px;
     border-color: rgb(238, 226, 226);
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1.0rem;
     font-weight: 400;   
     padding: auto;
+    height: 25px;
     margin-top: 5px;
     margin-bottom: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
