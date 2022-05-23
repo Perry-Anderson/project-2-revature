@@ -136,7 +136,7 @@ return (
    <Nav className="me-auto">
 
    <ul>
-   <li> <Navbar.Brand href="#home">Navbar</Navbar.Brand></li>
+   <li> <Navbar.Brand href="#home">Wish</Navbar.Brand></li>
    <li><Nav.Link as = {Link} to="/products" >All Products</Nav.Link></li>
    <li><Nav.Link as = {Link} to="/Electronics" >Electronics</Nav.Link></li>
    <li><Nav.Link as = {Link} to="/Jewelery" >Jewelry</Nav.Link></li>

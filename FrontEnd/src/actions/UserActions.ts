@@ -49,7 +49,7 @@ export const loginUser = (loginCreds:UserLogin) => async (dispatch:any) => {
         }
 
     } catch (e) {
-        console.log("LOGIN FAILED!")
+        alert("Login Failed")
     }
 }
 

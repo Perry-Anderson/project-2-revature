@@ -71,7 +71,7 @@ export const ViewWishlist: React.FC<any> = (get:any) => {
    <Nav className="me-auto">
 
    <ul>
-   <li> <Navbar.Brand href="#home">All</Navbar.Brand></li>
+   <li> <Navbar.Brand href="#home">Wish</Navbar.Brand></li>
    <li><Nav.Link as = {Link} to="/products" >All Products</Nav.Link></li>
    <li><Nav.Link as = {Link} to="/Electronics" >Electronics</Nav.Link></li>
    <li><Nav.Link as = {Link} to="/Jewelery" >Jewelry</Nav.Link></li>
@@ -98,7 +98,7 @@ export const ViewWishlist: React.FC<any> = (get:any) => {
          <h6>{`Price: ${product.price}`}</h6>
          <h6>{`Category: ${product.category}`}</h6>
          <div className="addToWishList">
-        <button className = "deleteButton" onClick={() => deleteProduct(product.product_id)}>Remove From Wishlist</button>
+        <button className = "addToWishList" onClick={() => deleteProduct(product.product_id)}>Remove From Wishlist</button>
          
          </div>
          </div>
