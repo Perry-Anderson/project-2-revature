@@ -25,7 +25,6 @@ public class ProductService {
 				pDTO.product_id,
 				pDTO.title,
 				pDTO.price,
-				pDTO.description,
 				pDTO.category,
 				pDTO.image,
 				currentUser

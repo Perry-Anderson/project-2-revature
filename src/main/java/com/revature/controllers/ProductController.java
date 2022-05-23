@@ -23,7 +23,7 @@ public class ProductController {
 //		ctx.result(ctx.formParam("id")) ;
 		Gson gson = new Gson();
 		ProductDTO newItem = gson.fromJson(body, ProductDTO.class);
-		System.out.print(newItem.description);
+
 		ps.addProductService(newItem);
 		ctx.status(202);
 		

@@ -34,8 +34,6 @@ public class Wishlist {
 		@Column
 		private String price;
 		@Column
-		private String description;
-		@Column
 		private String category;
 		@Column
 		private String image;
@@ -58,25 +56,23 @@ public class Wishlist {
 			super();
 			// TODO Auto-generated constructor stub
 		}
-		public Wishlist(int id, String product_id, String title, String price, String description, String category,
+		public Wishlist(int id, String product_id, String title, String price, String category,
 				String image, User user_fk) {
 			super();
 			this.id = id;
 			this.product_id = product_id;
 			this.title = title;
 			this.price = price;
-			this.description = description;
 			this.category = category;
 			this.image = image;
 			this.user_fk = user_fk;
 		}
-		public Wishlist(String product_id, String title, String price, String description, String category, String image,
+		public Wishlist(String product_id, String title, String price, String category, String image,
 				User user_fk) {
 			super();
 			this.product_id = product_id;
 			this.title = title;
 			this.price = price;
-			this.description = description;
 			this.category = category;
 			this.image = image;
 			this.user_fk = user_fk;
@@ -105,12 +101,7 @@ public class Wishlist {
 		public void setPrice(String price) {
 			this.price = price;
 		}
-		public String getDescription() {
-			return description;
-		}
-		public void setDescription(String description) {
-			this.description = description;
-		}
+
 		public String getCategory() {
 			return category;
 		}
