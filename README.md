@@ -5,7 +5,7 @@ Developed a multi-API, React-based application that utilized the following full 
 
 Through SCRUM-based teamwork, team members met daily, set goals, and collaborated efficiently to create their own desired features. Features  were then pushed to branches using the GIT platform, and successfully merged, and developed throughout the product's lifecycle.
 
-## Features/Technical Requirements
+## Features
 
 * Create and store users and their relevant information.
 * Generate UUID's for each item added to users' wish lists.
