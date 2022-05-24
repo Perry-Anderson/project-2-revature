@@ -51,10 +51,10 @@ Dillon Tuell
 
 ## License
 This project uses the following license: 
-Perry Anderson
-Tyler Balaskovitz
-Melba Sanchez 
-Dillon Tuell
+Perry Anderson,
+Tyler Balaskovitz,
+Melba Sanchez, 
+Dillon Tuell,
 Revature https://revature.com/
 
 
