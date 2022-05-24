@@ -30,7 +30,7 @@ Git Clone ---> https://github.com/Perry-Anderson/project-2-revature.git
 To get started use the provided SQL Script to populate your RDS with the appropriate tables and information.
 
 ## Usage / Web Home Login
-n order to see this project in action, you will need a few things:
+In order to see this project in action, you will need a few things:
 
 Be sure to have Spring ToolsSuiote4 installed.
 Be sure to have the Java 8 runtime environment installed.
