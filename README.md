@@ -44,10 +44,10 @@ Visual Code Installed with React.
 
 
 ## Contributors
-Perry Anderson
-Tyler Balaskovitz
-Melba Sanchez
-Dillon Tuell
+Perry Anderson, 
+Tyler Balaskovitz,
+Melba Sanchez, and
+Dillon Tuell.
 
 ## License
 This project uses the following license: 
